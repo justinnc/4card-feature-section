@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  background-color: #fafafa;
+  min-height: 100vh;
+  padding-top: 85px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 30px;
+  }
+}
+
+main {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+main h1 {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 200;
+  color: #4c4e61;
+}
+
+main h1 span {
+  display: block;
+  font-weight: bold;
+}
+
+main p {
+  max-width: calc(1440px / 2);
+  margin-left: auto;
+  margin-right: auto;
+  color: #a3a5ae;
+}
+
+main section article:nth-child(1) {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+main section article:nth-child(2) {
+  border-top-color: #ea5353;
+}
+
+main section article:nth-child(3) {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  border-top-color: #549ef2;
+}
+
+main section article:nth-child(4) {
+  border-top-color: #fcaf4a;
+}
+
+@media (max-width: 768px) {
+  main section article:nth-child(1) {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  main section article:nth-child(3) {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+main article {
+  width: 25%;
+  height: 250px;
+  display: inline-block;
+  background: white;
+  position: relative;
+  text-align: left;
+  padding: 30px;
+  border-top: 5px solid #45d3d3;
+  -webkit-box-shadow: 0px 10px 20px rgba(163, 165, 174, 0.4);
+          box-shadow: 0px 10px 20px rgba(163, 165, 174, 0.4);
+  color: #a3a5ae;
+  margin: 15px;
+}
+
+@media (max-width: 768px) {
+  main article {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 30px;
+  }
+}
+
+main article h2 {
+  color: #4c4e61;
+  padding-right: 30px;
+}
+
+main article img {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+}
+/*# sourceMappingURL=styles.css.map */

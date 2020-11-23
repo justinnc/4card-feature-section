@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+$Red: hsl(0, 78%, 62%);
+$Cyan: hsl(180, 62%, 55%);
+$Orange: hsl(34, 97%, 64%);
+$Blue: hsl(212, 86%, 64%);
+
+$VeryDarkBlue: hsl(234, 12%, 34%);
+$GrayishBlue: hsl(229, 6%, 66%);
+$VeryLightGray: hsl(0, 0%, 98%);
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  background-color: $VeryLightGray;
+  min-height: 100vh;
+  padding-top: 85px;
+  @media (max-width: 768px) {
+    padding: 30px;
+  }
+}
+
+main {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  h1 {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 200;
+    color: $VeryDarkBlue;
+    span {
+      display: block;
+      font-weight: bold;
+    }
+  }
+  p {
+    max-width: calc(1440px / 2);
+    margin-left: auto;
+    margin-right: auto;
+    color: $GrayishBlue;
+  }
+  section {
+    article:nth-child(1) {
+      transform: translateY(50%);
+    }
+    article:nth-child(2) {
+      border-top-color: $Red;
+    }
+    article:nth-child(3) {
+      transform: translateY(50%);
+      border-top-color: $Blue;
+    }
+    article:nth-child(4) {
+      border-top-color: $Orange;
+    }
+
+    @media (max-width: 768px) {
+      article:nth-child(1) {
+        transform: translateY(0%);
+      }
+
+      article:nth-child(3) {
+        transform: translateY(0%);
+      }
+    }
+  }
+
+  article {
+    width: 25%;
+    height: 250px;
+    display: inline-block;
+    background: white;
+    position: relative;
+    text-align: left;
+    padding: 30px;
+    border-top: 5px solid $Cyan;
+    box-shadow: 0px 10px 20px rgba($GrayishBlue, 0.4);
+    color: $GrayishBlue;
+    margin: 15px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      margin: 0px;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: $VeryDarkBlue;
+      padding-right: 30px;
+    }
+    img {
+      position: absolute;
+      bottom: 15px;
+      right: 20px;
+    }
+  }
+}
